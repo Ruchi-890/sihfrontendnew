@@ -1,15 +1,14 @@
 "use client";
-import Image from "next/image";
-import AppBar from '@/components/ui/appbar';
-import Hero from '@/app/homepage/hero';
-import FaqSection from '@/app/homepage/faq_section';
-import Features from "./homepage/features";
+import Hero from '@/components/home/hero';
+import FaqSection from '@/components/home/faq_section';
+import Features from "@/components/home/features"
+import BarChart from '@/components/Barchats';
 
 export default function Home() {
   return (
     <>
-      <AppBar />
       <main>
+      <BarChart/>
         <Hero />
         <Features />
         <FaqSection />

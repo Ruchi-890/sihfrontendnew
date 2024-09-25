@@ -1,5 +1,6 @@
-// /components/ui/Menu.tsx
+
 'use client';
+import Image from 'next/image';
 import { useState } from 'react';
 
 interface MenuItem {
@@ -47,7 +48,7 @@ export default function Menu({ role }: MenuProps) {
         <div id="menuContent" className="menu-content">
           {menuOptions[role].map(option => (
             <a href={option.href} key={option.text} className="menu-item">
-              <img src={`../../assets/${option.icon}`} alt={`${option.text} Icon`} className="menu-item-icon" />
+              <Image src={`../../assets/${option.icon}`} alt={`${option.text} Icon`} className="menu-item-icon" />
               {option.text}
             </a>
           ))}
