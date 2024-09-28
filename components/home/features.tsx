@@ -4,9 +4,10 @@ export default function Features() {
   return (
     <div className="features-section p-8">
       {/* Headline */}
-      <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
-        Features
-      </h2>
+      <section id="features" className="features-section pt-20"> {/* Adjusted padding-top */}
+        <h2 className="text-3xl font-bold text-center mb-8 text-foreground">
+          Features
+        </h2>
 
       {/* Features Container */}
       <div className="features-container grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -46,6 +47,7 @@ export default function Features() {
           </ul>
         </div>
       </div>
+      </section>
     </div>
   );
 }

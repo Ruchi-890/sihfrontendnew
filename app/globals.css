@@ -96,3 +96,16 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+.bounce {
+  animation: bounce 0.5s ease-in-out; /* Adjust duration and easing */
+}
+
+.faq-item:hover {
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.faq-item {
+  transition: transform 0.2s; /* Smooth transform on hover */
+}
